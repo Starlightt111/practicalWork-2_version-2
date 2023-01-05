@@ -1,89 +1,462 @@
-body,
-html {
-  font-family: Helvetica, Arial, sans-serif;
+.page {
+  min-width: 1100px;
+  /* мы ещё не умеем делать мобильную версию сайта, */
+  /* поэтому выше установлена минимальная ширина страницы */
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 .header {
   display: flex;
-  justify-content: space-between;
+  min-height: 600px;
+  max-height: 756px;
+  /* выше установили ограничения для секции */
+}
+
+.logo-header-main {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  bottom: 0;
+  left: 64px;
+}
+
+img {
+  width: 228px;
+  height: 32px;
+}
+
+.header__title {
+  display: flex;
   align-items: center;
-  padding: 0 80px;
-  min-height: 80px;
+  width: 730px;
+  margin-left: 64px;
+  z-index: 3;
 }
 
-.header_theme_dark {
-  background-color: black;
+h1 {
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+}
+.header__subtitle {
+  width: 388px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 64px;
+  margin-bottom: 30px;
+  z-index: 3;
+}
+.text__subtitle {
+  width: 388px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 25px;
+}
+.a_1 {
+  list-style: none;
+  color: blue;
+  text-decoration: none;
+}
+.a_1::after {
+  content: " →";
+  color: blue;
+}
+
+.a_1:hover {
+  border-bottom: 1px solid blue;
+  color: blue;
+}
+
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+
+.img {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  right: 0;
+
+  height: 608px;
+  width: 765px;
+}
+.header__square-pic {
+  position: absolute;
+  background-color: rgb(50, 96, 212);
+  width: 568px;
+  height: 568px;
+  top: 64px;
+  right: 0px;
+}
+
+/* и элемента с модификатором вида ключ-значение */
+.table__cell_theme_dark {
+  width: 200px;
   color: white;
+  margin-right: 0;
+  margin-top: 80px;
 }
 
-.menu {
-  width: 20%;
+/* Header end*/
+
+/*content start*/
+.content {
+  margin-top: 320px;
+}
+.description {
+  margin: 320px auto;
+}
+.two-columns {
   display: flex;
   justify-content: space-between;
+  width: 80%;
+  margin-bottom: 100px;
+  margin: 0 auto;
 }
-
-.menu__link {
-  text-decoration: none;
-  color: black;
+.brief {
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 300;
 }
-
-.menu__link_theme_dark {
-  color: white;
-}
-
-.content {
+.block {
+  width: 80%;
+  min-width: 784px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 0 80px;
-  min-height: calc(100vh - 160px);
+}
+.main-text {
+  padding-bottom: 30px;
+
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 300;
+}
+.paragraph {
+  line-height: 14px;
+  font-size: 24px;
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+.p-1 {
+  display: inline-block;
+
+  font-size: 24px;
+  font-weight: 600;
+}
+.span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 300;
+}
+/*content end*/
+
+/* digits start */
+.section-title {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: block;
+  height: 60px;
 }
 
-.content_theme_dark {
-  background-color: black;
+.text-title {
+  display: flex;
+  justify-content: center;
+  font-size: 60px;
+  line-height: 1.15;
+  font-weight: 600;
+}
+.section-subtitle {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.text-subtitle {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.text-subtitle {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.table {
+  margin-bottom: 100px;
+  display: block;
+}
+.table-part-1 {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+.table-part-2 {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.table-cell {
+  width: 250px;
+}
+
+.table-heading {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.table-text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+/* digits end*/
+
+/*feyman start */
+.feynman {
+  height: 756px;
+  position: relative;
+  margin-top: 100px;
+}
+.img__feynman {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 867px;
+  height: 637px;
+  z-index: 1;
+}
+
+.feynman-title {
+  position: relative;
+  width: 100%;
+  z-index: 33;
+  text-align: center;
+}
+
+.freynman_h1 {
+  width: 648px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  z-index: 5;
+}
+.freynman__h1 {
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.feynman-subtitle {
+  position: relative;
+  z-index: 33;
+  text-align: center;
+  width: 100%;
+}
+.freynman_h2 {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 300;
+}
+.feynman-link {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  height: 378px;
+  margin-right: 48px;
+}
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: 300;
+}
+/* feyman end */
+
+/* kaufman start */
+.kaufman {
+  min-height: 600px;
+  max-height: 756px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(33, 33, 33);
+}
+.kaufman__section-title {
+  padding-top: 90px;
+  text-align: center;
+
+  padding-bottom: 20px;
+  width: 60%;
+  margin: 0 auto;
+  font-weight: 600;
+  font-size: 60px;
+  line-height: 1.15;
   color: white;
 }
 
+.kaufman__section-subtitle {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 34px;
+  color: white;
+}
+
+.kaufman__triangle__img {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: -210px;
+}
+
+.kaufman__table {
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+
+.kaufman__cell {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  z-index: 33;
+}
+
+.kaufman__heading {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.15;
+  color: white;
+}
+.kaufman__text {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.2;
+  color: white;
+}
+
+.kaufman__cell-part-1 {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.kaufman__cell-part-2 {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* kaufman end */
+
+/* footer start */
+
 .footer {
-  min-height: 80px;
-  padding: 0 80px;
+  background-color: rgb(33, 33, 33);
+  min-height: 350px;
+}
+
+.footer__columns {
+  width: 90%;
+  flex-basis: 711px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+}
+
+.place__footer {
+  width: 228px;
+  height: 32px;
+}
+
+.footer__author {
+  color: white;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.inner__column-footer {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.content__social {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__column-heading {
+  color: white;
+  padding-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.footer__column-link {
+  color: white;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 300;
+  display: flex;
+  align-items: stretch;
+}
+.footer__column-link:last-child {
+  padding-bottom: 16px;
+}
+.icon__footer {
+  width: 15px;
+  height: 15px;
+  margin-right: 6px;
+}
+
+.inner__footer__icon {
+  display: flex;
+  height: 30px;
+}
+.footer__social-icon {
   display: flex;
   align-items: center;
 }
 
-.footer_theme_dark {
-  background-color: black;
+.a__footer {
+  text-decoration: none;
   color: white;
 }
-
-.contact-form__label {
-  display: block;
-  margin-top: 20px;
-}
-
-.contact-form__input {
-  display: block;
-  margin-top: 10px;
-  width: 300px;
-  height: 30px;
-  border: 1px solid black;
-}
-
-.contact-form__textarea {
-  display: block;
-  width: 500px;
-  height: 200px;
-  border: 1px solid black;
-  margin-top: 20px;
-}
-
-.contact-form__button {
-  display: block;
-  width: 200px;
-  height: 50px;
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  margin-top: 20px;
-  cursor: pointer;
-}
+/* footer end */
