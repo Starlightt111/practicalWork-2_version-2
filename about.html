@@ -4,56 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Главная страница</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="styles/normalize.css" />
-    -->
+
     <link rel="stylesheet" href="styles/style.css" />
-    -->
   </head>
   <body>
-    <header class="header header_theme_dark">
+    <header class="header">
       <img
-        src="images/logo_white.svg"
+        src="images/logo_color.svg"
         alt="логотип Яндекс.Практикум"
-        class="logo logo_theme_dark"
+        class="logo"
       />
       <nav class="menu">
-        <a href="index.html" class="menu__link menu__link_theme_dark"
-          >Главная</a
-        >
-        <a href="about.html" class="menu__link menu__link_theme_dark"
-          >О проекте</a
-        >
-        <a href="contacts.html" class="menu__link menu__link_theme_dark"
-          >Контакты</a
-        >
+        <a href="index.html" class="menu__link">Главная</a>
+        <a href="about.html" class="menu__link">О проекте</a>
+        <a href="contacts.html" class="menu__link">Контакты</a>
       </nav>
     </header>
-    <main class="content content_theme_dark">
-      <h1 class="main-title">
-        Яндекс.Практикум поможет получить новую профессию
-      </h1>
-      <p class="main-subtitle">
-        Яндекс запускает сервис онлайн-образования: обучаем будущих
-        веб-разработчиков, аналитиков, дизайнеров и других востребованных
-        технологическими компаниями интернет-специалистов.
-      </p>
-      <h2 class="content__title">Мы учим на практике</h2>
-      <p class="content__paragraph">
-        Каждая профессия — это набор прикладных навыков. Мы даём конкретные
-        знания и учим применять их в деле.
-      </p>
-      <h2 class="content__title">Поддерживаем и вдохновляем</h2>
-      <p class="content__paragraph">
-        Наши наставники помогут успешно дойти до конца обучения.
-      </p>
-      <h2 class="content__title">Вам будет понятно</h2>
-      <p class="content__paragraph">
-        Не перегружаем терминами, используем примеры из жизни, выбираем задания
-        из реальной практики.
-      </p>
+    <main class="content">
+      <h1 class="main-title">Напишите нам:</h1>
+      <form class="contact-form">
+        <label for="name" class="contact-form__label">Имя:</label>
+        <input type="text" id="name" class="contact-form__input" />
+        <label for="email" class="contact-form__label">E-mail:</label>
+        <input type="email" id="email" class="contact-form__input" />
+        <label for="message" class="contact-form__label">Сообщение:</label>
+        <textarea id="message" class="contact-form__textarea"></textarea>
+        <input type="submit" value="Отправить" class="contact-form__button" />
+      </form>
     </main>
-    <footer class="footer footer_theme_dark">
+    <footer class="footer">
       <p class="footer__copyright">© Яндекс.Практикум</p>
     </footer>
   </body>

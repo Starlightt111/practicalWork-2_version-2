@@ -111,7 +111,7 @@
   width: 920px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 AUTO;
+  margin: 0 auto;
 }
 .cards__item {
   padding-top: 60px;
@@ -160,6 +160,7 @@
   margin-right: 20px;
   margin-top: 50px;
   margin-bottom: -60px;
+  border: 0;
 }
 .last1 {
   margin-right: 0px;
