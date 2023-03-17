@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Научиться учиться</title>
-    <link rel="stylesheet" href="pages/index.css" />
     <link rel="stylesheet" href="vendor/normalize.css" />
+    <link rel="stylesheet" href="pages/index.css" />
   </head>
 
   <body class="page">
@@ -27,7 +27,7 @@
         alt="изображение хедера"
         class="header__main-illustration"
       />
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic rotation"></div>
     </header>
     <!-- Header end-->
     <main class="content">
@@ -92,7 +92,7 @@
             </p>
           </div>
 
-          <div class="cards__item last">
+          <div class="cards__item">
             <img
               class="cards__image"
               src="./images/cards-interliving.png"
@@ -137,29 +137,24 @@
         <h2 class="section-title">Видео на TED</h2>
         <h3 class="section-subtitle">Для тех, кто любит прокрастинировать</h3>
         <div class="video__iframes">
-          <div class="video__iframe">
-            <iframe
-              width="515"
-              height="316"
-              src="https://www.youtube.com/embed/arj7oStGLkU"
-              title="YouTube video player"
-              allow="accelerometer; autoplay;
+          <iframe
+            class="iframe"
+            src="https://www.youtube.com/embed/arj7oStGLkU"
+            title="YouTube video player"
+            allow="accelerometer; autoplay;
           clipboard-write;
            encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
-          <div class="video__iframe last1">
-            <iframe
-              width="515"
-              height="316"
-              src="https://www.youtube.com/embed/5MgBikgcWnY"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+            allow="fullscreen"
+          ></iframe>
+
+          <iframe
+            class="iframe"
+            src="https://www.youtube.com/embed/5MgBikgcWnY"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
            picture-in-picture; web-share"
-              allowfullscreen
-            ></iframe>
-          </div>
+            allow="fullscreen"
+          ></iframe>
         </div>
       </section>
       <!-- Video end-->
@@ -357,7 +352,7 @@
         <img
           src="./images/kaufman-triangle.svg"
           alt="Синий треугольник"
-          class="kaufman__triangle"
+          class="kaufman__triangle rotation"
         />
       </section>
 
@@ -365,10 +360,10 @@
 
       <!-- resources start-->
       <section class="resources">
-        <h2 class="section-title">Полезные ресурсы</h2>
-        <h3 class="section-subtitle">
+        <h1 class="section-title">Полезные ресурсы</h1>
+        <h2 class="section-subtitle">
           Больше материалов о техниках и лайфхаках обучения
-        </h3>
+        </h2>
         <div class="resources__logo-zone">
           <a href="#" class="resources__link">
             <img
@@ -386,15 +381,15 @@
           </a>
           <a href="#" class="resources__link">
             <img
-              src="./images/logo/resources-polka.svg"
-              alt="картинка полка"
+              src="./images/logo/resources-strelka.svg"
+              alt="картинка стрелка"
               class="resources__logo"
             />
           </a>
           <a href="#" class="resources__link">
             <img
-              src="./images/logo/resources-strelka.svg"
-              alt="картинка стрелка"
+              src="./images/logo/resources-polka.svg"
+              alt="картинка полка"
               class="resources__logo"
             />
           </a>

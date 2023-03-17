@@ -1,8 +1,11 @@
 .header__link {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: normal;
   line-height: 25px;
   list-style: none;
   color: #2f80ed;
   text-decoration: none;
+}
+.header__link {
+  opacity: 0.6;
 }
