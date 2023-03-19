@@ -1,3 +1,5 @@
+@import url(../vendor/normalize.css);
+
 @import url(../blocks/cards/__description/cards__description.css);
 @import url(../blocks/cards/__image/cards__image.css);
 @import url(../blocks/cards/__item/cards__item.css);
@@ -85,4 +87,5 @@
 
 @import url(../blocks/resources/__logo-zone_links/resources__link.css);
 
-@import url(../blocks/video/__iframes/iframe.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
+@import url(../blocks/video/__iframes/video__iframes.css);
